@@ -8,7 +8,8 @@ createApp({
         helpMessage : "Da oggi sarò il tuo aiuto principale su Js",
         message : "Oggi aiuterò?",
         firstName : "",
-        lastName : ""
+        lastName : "",
+        pathImg : ""
     }
   }
   //monto o inietto quei dati nel div con id app dove andrò a scrivere tutto il codice html
