@@ -18,6 +18,11 @@
     <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
 
     <div id="app">
+        <h1 class="text-center bg-primary p-2">{{ welcomeMessage }}</h1>
+        <p class="fs-5">{{ helpMessage }}</p>
+        <p>{{ message }} {{ firstName }} {{ lastName }}</p>
+        <input type="text" placeholder="Inserisci il tuo Nome" v-model="firstName">
+        <input type="text" placeholder="Inserisci il tuo Cognome" v-model="lastName">
         
     </div>
 
