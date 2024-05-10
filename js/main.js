@@ -9,7 +9,17 @@ createApp({
         message : "Oggi aiuterò?",
         firstName : "",
         lastName : "",
-        pathImg : ""
+        chooseImg : "Scegli la foto che vuoi vedere",
+        pathImgOne : "",
+        pathImgTwo : ""
+    }
+  },
+  methods: {
+    img() {
+      this.pathImgOne = "./img/angela-caroll-chief-editor.jpg"
+    },
+    imgTwo() {
+      this.pathImgTwo = "./img/angela-lopez-social-media-manager.jpg"
     }
   }
   //monto o inietto quei dati nel div con id app dove andrò a scrivere tutto il codice html
