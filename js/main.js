@@ -11,7 +11,8 @@ createApp({
         lastName : "",
         chooseImg : "Scegli la foto che vuoi vedere",
         pathImgOne : "",
-        pathImgTwo : ""
+        pathImgTwo : "",
+        classP2 : "p-2"
     }
   },
   methods: {

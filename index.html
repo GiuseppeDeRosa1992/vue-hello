@@ -18,20 +18,20 @@
     <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
 
     <div id="app" class="text-center">
-        <h1 class="bg-primary p-2">{{ welcomeMessage }}</h1>
+        <h1 class="bg-primary" :class="classP2">{{ welcomeMessage }}</h1>
         <p class="fs-5">{{ helpMessage }}</p>
         <p>{{ message }}</p>
         <h2>{{ firstName }} {{ lastName }}</h2>
-        <input type="text" placeholder="Inserisci il tuo Nome" v-model="firstName">
-        <input type="text" placeholder="Inserisci il tuo Cognome" v-model="lastName">
-        <h3 class="p-1 ">{{ chooseImg }}</h3>
+        <input type="text" placeholder="Inserisci il tuo Nome: es.Marco" v-model="firstName" class="w-25 mx-1">
+        <input type="text" placeholder="Inserisci il tuo Cognome es.Rossi" v-model="lastName" class="w-25 mx-1">
+        <h3 class="p-1">{{ chooseImg }}</h3>
         <div>
-            <button @click="img" class="p-2 m-2">Cliccami per avere la foto di Angela caroll
+            <button @click="img" class="m-2" :class="classP2">Cliccami per avere la foto di Angela caroll
                 <figure class="m-0">
                     <img :src="pathImgOne" alt="">
                 </figure>
             </button>
-            <button @click="imgTwo" class="p-2 m-2">Cliccami per avere la foto di Angela Lopez
+            <button @click="imgTwo" class="m-2" :class="classP2">Cliccami per avere la foto di Angela Lopez
                 <figure class="m-0">
                     <img :src="pathImgTwo" alt="">
                 </figure>
